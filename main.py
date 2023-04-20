@@ -14,7 +14,6 @@ from Ejercicios import EjercicioCompresionBasico2.py
 from Ejercicios import EjercicioCompresionBasico3.py
 from Ejercicios import EjercicioCompresionAvanzado1.py
 from Ejercicios import EjercicioCompresionAvanzado2.py
-from Ejercicios import EjercicioCompresionAvanzado3.py
 
 
 while True:

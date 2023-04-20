@@ -15,7 +15,7 @@ from Ejercicios import EjercicioCompresionBasico3.py
 from Ejercicios import EjercicioCompresionAvanzado1.py
 from Ejercicios import EjercicioCompresionAvanzado2.py
 from Ejercicios import EjercicioCompresionAvanzado3.py
-#a
+
 
 while True:
     if sys.platform.startswith("linux"):

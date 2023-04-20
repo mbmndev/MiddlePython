@@ -12,6 +12,7 @@
 #   La clase deberá tener un método que incorpore el promedio de las notas del alumno.
 
 #   
+import statistics
 
 class ListaAlumnos:
     alumnos_lista=[]
@@ -30,7 +31,13 @@ class ListaAlumnos:
     def mostrarAlumnos(self):
         for alumnos in self.Alumnos_lista:
             print(alumnos)
-    
+    def promedio(self):
+        aux=0
+        for i in range(len(self.Alumnos_lista)):
+            mean = statistics.mean(self.Alumnos_lista[i]["notas"])
+            name=self.Alumnos_lista[i]["nombre"]
+            print(f"El promedio del alumno {name} es :{mean}")
+           
 
 
 alumnos_lista = [
@@ -45,7 +52,7 @@ apellido=""
 edad=0
 notas=0
 
-listaAlumnos=ListaAlumnos(alumnos_lista,"","",0,0,alumno)
+listaAlumnos=ListaAlumnos(alumnos_lista,alumno)
 
 while True:
     nombre=input("Ingrese el nombre del alumno: ".capitalize())
@@ -55,10 +62,9 @@ while True:
             edad=input("Introduzca la edad del alumno :")
             if edad.isdigit():
                 edadInt=int(edad)
-                notas=input("Introduzca las notas del alumno :")
-                if notas.isdigit():
-                    notasInt=int(notas)
-                    
+                notas=input("Introduzca las 3 notas del alumno entre espacios :").split()
+                if len(notas)<=3:
+                    notas=[int(i) for i in notas]
                     alumno["nombre"]=nombre
                     alumno["apellido"]=apellido
                     alumno["edad"]=edadInt
@@ -77,3 +83,6 @@ while True:
 
 
 listaAlumnos.mostrarAlumnos()
+print()
+listaAlumnos.promedio()
+

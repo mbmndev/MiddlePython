@@ -36,7 +36,7 @@ class ListaAlumnos:
         for i in range(len(self.Alumnos_lista)):
             mean = statistics.mean(self.Alumnos_lista[i]["notas"])
             name=self.Alumnos_lista[i]["nombre"]
-            print(f"El promedio del alumno {name} es :{mean}")
+            print(f"El promedio del alumno {name} es: {mean:.2f}")
            
 
 
@@ -81,7 +81,8 @@ while True:
         else: print("Error al introducir el apellido")
     else: print("Error al introducir el nombre")
 
-
+print()
+print("Lista de Alumnos:")
 listaAlumnos.mostrarAlumnos()
 print()
 listaAlumnos.promedio()

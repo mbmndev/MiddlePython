@@ -6,7 +6,7 @@
 class Lapiz:
 
     
-    def __init__(self,color="negro",grosor=2):
+    def __init__(self,color="negro",grosor=0):
         self.Color=color
         self.Grosor=grosor
 

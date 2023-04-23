@@ -2,19 +2,19 @@ import os
 import sys
 #from Varios import principal
 
-from Ejercicios import EjercicioJSON1.py
-from Ejercicios import EjercicioJSON2.py
-from Ejercicios import EjercicioJSON3.py
-from Ejercicios import EjercicioClases1.py
-from Ejercicios import EjercicioClases2.py
-from Ejercicios import EjercicioClases3.py
-from Ejercicios import EjercicioClases4.py
-from Ejercicios import EjercicioCompresionBasico1.py
-from Ejercicios import EjercicioCompresionBasico2.py
-from Ejercicios import EjercicioCompresionBasico3.py
-from Ejercicios import EjercicioCompresionAvanzado1.py
-from Ejercicios import EjercicioCompresionAvanzado2.py
-from Ejercicios import EjercicioCompresionAvanzado3.py
+from EjerciciosJSON import EjercicioJSON1
+from EjerciciosJSON import EjercicioJSON2
+from EjerciciosJSON import EjercicioJSON3
+from EjerciciosClases import Ejercicio1
+from EjerciciosClases import Ejercicio2
+from EjerciciosClases import Ejercicio3
+from EjerciciosClases import Ejercicio4
+from basicos import EjercicioB_1
+from basicos import EjercicioB_2
+from basicos import EjercicioB_3
+from avanzados import Ejercicio_1
+from avanzados import Ejercicio_2
+from avanzados import Ejercicio_3
 
 
 while True:
@@ -58,25 +58,25 @@ while True:
     elif opcion == "3":
         EjercicioJSON3.principal()
     elif opcion == "4":
-        EjercicioClases1.principal() 
+        Ejercicio1.principal() 
     elif opcion == "5":
-        EjercicioClases2.principal() 
+        Ejercicio2.principal() 
     elif opcion == "6":
-        EjercicioClases3.principal() 
+        Ejercicio3.principal() 
     elif opcion == "7":
-        EjercicioClases4.principal()
+        Ejercicio4.principal()
     elif opcion == "8":
-        EjercicioCompresionBasico1.principal()     
+        EjercicioB_1.principal()     
     elif opcion == "9":
-        EjercicioCompresionBasico2.principal() 
+        EjercicioB_2.principal() 
     elif opcion == "10":
-        EjercicioCompresionBasico3.principal() 
+        EjercicioB_3.principal() 
     elif opcion == "11":
-        EjercicioCompresionAvanzado1.principal()
+        Ejercicio_1.principal()
     elif opcion == "12":
-        EjercicioCompresionAvanzado2.principal() 
+        Ejercicio_2.principal() 
     elif opcion == "13":
-        EjercicioCompresionAvanzado3.principal()
+        Ejercicio_3.principal()
 
 
     elif opcion == "0":

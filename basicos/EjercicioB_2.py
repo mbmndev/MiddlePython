@@ -7,12 +7,17 @@ def normal():
     print(diccionario)
 
 
-def comprension():
+def compresion():
     diccionario = {x: pow(x, 2) for x in range(1, 6)}
     print("Acontinuacion se muestra el diccionario de los cuadrados del 1 al 6 usando la comprension de coleccion")
     print(diccionario)
 
 
+def principal():
+    compresion()
+
+
 if __name__ == "__main__":
+    principal()
     # normal()
-    comprension()
+    # # compresion()

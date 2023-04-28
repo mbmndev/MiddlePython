@@ -20,6 +20,11 @@ def compresion():
     print(diccionario)
 
 
-if __name__ == "__main__":
-    # normal()
+def principal():
     compresion()
+
+
+if __name__ == "__main__":
+    principal()
+    # normal()
+    # # compresion()

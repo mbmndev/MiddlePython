@@ -10,7 +10,7 @@ def normal():
     print(diccionario)
 
 
-def comprension():
+def compresion():
     cantidad = int(input("¿Cuantas personas quieres añadir? "))
     diccionario = {input("introduce nombre de la persona: "): int(
         input("introduce edad de la persona: ")) for x in range(cantidad)}
@@ -18,6 +18,11 @@ def comprension():
     print(diccionario)
 
 
+def principal():
+    compresion()
+
+
 if __name__ == "__main__":
+    principal()
     # normal()
-    comprension()
+    # # compresion()

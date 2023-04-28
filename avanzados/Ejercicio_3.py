@@ -1,7 +1,7 @@
 # 3.- Dado un texto con una lista de ciudades con su emblema mas importante, pedir las ciudades para que las entre el usuario por teclado y crear un diccionario con su ciudad y su emblema. **Nota** el diccionario deberá ordenarse por su clave.
 def normal():
     entrada = input(
-        "Ingresa las ciudades y sus emblemas separados por comas: ")
+        "Ingresa las ciudades y sus emblemas de la siguiente manera pais:emblema,pais:emblema ")
     ciudades = entrada.split(",")
     dicionario = {}
     for ciudad in ciudades:
@@ -15,7 +15,7 @@ def normal():
 
 def compresion():
     entrada = input(
-        "Ingresa las ciudades y sus emblemas separados por comas: ")
+        "Ingresa las ciudades y sus emblemas de la siguiente manera pais:emblema,pais:emblema ")
     ciudades = entrada.split(",")
     dicionario = {ciudad_emblema[0].replace(" ", "").capitalize(): ciudad_emblema[1].replace(
         " ", "").capitalize() for ciudad_emblema in [ciudad.split(":") for ciudad in ciudades]}
@@ -24,6 +24,11 @@ def compresion():
     print(ciudades_ordenadas)
 
 
-if __name__ == "__main__":
-    # normal()
+def principal():
     compresion()
+
+
+if __name__ == "__main__":
+    principal()
+    # normal()
+    # # compresion()

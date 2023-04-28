@@ -10,9 +10,9 @@ class Flor:
         self.Color=color
     def mostrarInformacion(self):
         print(f"{self.Nombre} de color {self.Color}")
-        
-flor1=Flor("Rosa","Roja")
-flor2=Flor("Clavel","Azul")
+def principal():       
+    flor1=Flor("Rosa","Roja")
+    flor2=Flor("Clavel","Azul")
 
-flor1.mostrarInformacion()
-flor2.mostrarInformacion()
+    flor1.mostrarInformacion()
+    flor2.mostrarInformacion()

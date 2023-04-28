@@ -16,6 +16,6 @@ class Lapiz:
         #print("Escribiendo")
     def escribirColor(self):
         self.__escribir()
-
-lapiz=Lapiz()
-lapiz.escribirColor()
+def principal():
+    lapiz=Lapiz()
+    lapiz.escribirColor()

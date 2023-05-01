@@ -21,5 +21,9 @@ usuario = {
     }
 }
 
-json_usuario = json.dumps(usuario)
-print(json_usuario)
+def principal():
+    devjspn()
+    
+def devjspn():    
+    json_usuario = json.dumps(usuario)
+    print(json_usuario)

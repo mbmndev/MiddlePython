@@ -27,6 +27,10 @@ transaccion = {
     "producto": producto
 }
 
-json_transaccion = json.dumps(transaccion)
-print(json_transaccion)
+def principal():
+    funtransaccion()
+
+def funtransaccion():
+    json_transaccion = json.dumps(transaccion)
+    print(json_transaccion)
 
